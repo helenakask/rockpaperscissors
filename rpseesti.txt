@@ -1,0 +1,34 @@
+var userChoice = prompt("kivi, paber vıi k‰‰rid?");
+var computerChoice = Math.random;
+if (computerChoice < 0.34) {
+	computerChoice = "kivi";
+} else if(computerChoice <= 0.67) {
+	computerChoice = "paber";
+} else {
+	computerChoice = "k‰‰rid";
+} confirm("arvuti: " + computerChoice);var compare = function (choice1, choice2) {
+    if (choice1 === choice2) {
+       confirm ("seis on viigis!") ;
+      } if (choice1 === "kivi") {
+          if (choice2 === "k‰‰rid") {
+          confirm ("kivi vıidab");  
+          }
+           else {
+              confirm ("paber vıidab") ;} 
+      }
+              if (choice1 === "paber") {
+                  
+                  if (choice2 === "kivi") { 
+                      confirm ("paber vıidab"); }
+                      else { 
+                          confirm ("k‰‰rid vıidavad") }
+              }
+              if (choice1 === "k‰‰rid") {
+                  if (choice2 === "kivi") {
+                      confirm ("kivi vıidab"); }
+                     else { confirm ("k‰‰rid vıidavad"); }
+                     }
+else { confirm "plz kasuta v‰ikseid t‰hti ja ‰ra proovi kedagi siin ninapidi vedada" }
+    
+};
+console.log(compare(userChoice,computerChoice))
